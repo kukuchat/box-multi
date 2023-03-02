@@ -1,0 +1,21 @@
+# Installations indépendantes
+apt update 
+apt install python3
+apt install pip
+apt install openssh-client
+
+service ssh start
+
+# Installations des bibliothèques
+pip install BAC0
+ping
+pip install netifaces
+pip install pytz
+pip install pymodbus
+
+# Autorisation des ports
+chmod 777 /dev/ttyUSB0
+
+# Compilation des codes bacnet et modbus
+python3 test_detect_all_bacnet.py
+python3 code1.py
